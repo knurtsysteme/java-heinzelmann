@@ -130,9 +130,38 @@ public class ConsoleInputops {
 		}
 		return st;
 	}
-	// public static void main(String[] args) {
-	// ConsoleInputops i = new ConsoleInputops();
-	// String tmp = i.readFilenameFromConsole();
-	// System.out.println("---> "+tmp);
-	// }
+	/** one and only instance of ConsoleInputops */
+	private volatile static ConsoleInputops me;
+
+	/** construct ConsoleInputops */
+	private ConsoleInputops() {
+	}
+
+	/**
+	 * return the one and only instance of ConsoleInputops
+	 * 
+	 * @return the one and only instance of ConsoleInputops
+	 */
+	public static ConsoleInputops getInstance() {
+		if (me == null) {
+			// ↖ no instance so far
+			synchronized (ConsoleInputops.class) {
+				if (me == null) {
+					// ↖ still no instance so far
+					// ↓ the one and only me
+					me = new ConsoleInputops();
+				}
+			}
+		}
+		return me;
+	}
+
+	/**
+	 * short for {@link #getInstance()}
+	 * 
+	 * @return the one and only instance of ConsoleInputops
+	 */
+	public static ConsoleInputops me() {
+		return getInstance();
+	}
 }
