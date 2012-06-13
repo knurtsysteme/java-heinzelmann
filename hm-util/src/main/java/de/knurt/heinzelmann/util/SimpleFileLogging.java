@@ -31,7 +31,8 @@ import java.util.logging.LogRecord;
  * @author <a href="mailto:Daniel Oltmanns %3Cdanieloltmanns@gmx.de%3E">Daniel
  *         Oltmanns</a>
  */
-public class SimpleFileLogging implements Logging {
+@Deprecated
+public class SimpleFileLogging {
 
 	private File logfile;
 	private FileHandler fh;
