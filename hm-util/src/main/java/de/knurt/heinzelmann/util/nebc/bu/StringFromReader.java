@@ -14,9 +14,8 @@
  * limitations under the License.
  */package de.knurt.heinzelmann.util.nebc.bu;
 
+import java.io.BufferedReader;
 import java.io.IOException;
-
-import javax.servlet.http.HttpServletRequest;
 
 import de.knurt.heinzelmann.util.nebc.BoardUnit;
 
@@ -27,12 +26,20 @@ import de.knurt.heinzelmann.util.nebc.BoardUnit;
  * @since 02/22/2012
  */
 
-public class RawDataStringFromRequest implements BoardUnit<HttpServletRequest, String> {
+public class StringFromReader implements BoardUnit<BufferedReader, String> {
 
 	@Override
-	public String process(HttpServletRequest datum) {
+	public String process(BufferedReader reader) {
+		StringBuilder result = new StringBuilder();
 		try {
-			return new StringFromReader().process(datum.getReader());
+			reader.mark(10000);
+			String line;
+			do {
+				line = reader.readLine();
+				result.append(line).append("\n");
+			} while (line != null);
+			reader.reset();
+			return result.toString();
 		} catch (IOException e) {
 			return null;
 		}
