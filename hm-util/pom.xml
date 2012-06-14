@@ -1,65 +1,69 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-    <modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>de.knurt.heinzelmann</groupId>
-        <artifactId>heinzelmann</artifactId>
-        <version>1.00-SNAPSHOT</version>
-    </parent>
-    <artifactId>hm-util</artifactId>
-    <packaging>jar</packaging>
-    <name>hm-util</name>
-    <url>http://maven.apache.org</url>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>de.knurt.heinzelmann</groupId>
+    <artifactId>heinzelmann</artifactId>
+    <version>1.00-SNAPSHOT</version>
+  </parent>
+  <artifactId>hm-util</artifactId>
+  <packaging>jar</packaging>
+  <name>hm-util</name>
+  <url>http://maven.apache.org</url>
 
-    <licenses>
-        <license>
-            <name>creativ commons</name>
-            <url>http://creativecommons.org/licenses/by-nc/3.0</url>
-            <distribution>Attribution-Noncommercial 3.0 Unported</distribution>
-            <comments>Attribution-Noncommercial 3.0 Unported</comments>
-        </license>
-    </licenses>
-    <organization>
-        <name>KNURT Systeme</name>
-        <url>http://www.knurt.de</url>
-    </organization>
-    <developers>
-        <developer>
-            <id>danieloltmanns</id>
-            <name>Daniel Oltmanns</name>
-            <email>danieloltmanns@knurt.de</email>
-            <url>http://www.knurt.de</url>
-            <organization>KNURT Systeme</organization>
-            <organizationUrl>http://www.knurt.de</organizationUrl>
-            <roles>
-                <role>developer</role>
-            </roles>
-            <timezone>1</timezone>
-        </developer>
-    </developers>
-    <dependencies>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20090211</version>
-        </dependency>
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>2.5</version>
-        </dependency>
-        <!-- XXX only need org.apache.commons.httpclient.contrib.ssl.EasySSLProtocolSocketFactor - so this is "breaking a butterfly on a wheel" -->
-        <dependency>
-            <groupId>org.codehaus.cjcook</groupId>
-            <artifactId>cjcook-examples</artifactId>
-            <version>0.17</version>
-        </dependency>
-        <dependency>
-        	<groupId>junit</groupId>
-        	<artifactId>junit</artifactId>
-        	<version>4.8.1</version>
-        	<scope>test</scope>
-        </dependency>
-    </dependencies>
+  <licenses>
+    <license>
+      <name>creativ commons</name>
+      <url>http://creativecommons.org/licenses/by-nc/3.0</url>
+      <distribution>Attribution-Noncommercial 3.0 Unported</distribution>
+      <comments>Attribution-Noncommercial 3.0 Unported</comments>
+    </license>
+  </licenses>
+  <organization>
+    <name>KNURT Systeme</name>
+    <url>http://www.knurt.de</url>
+  </organization>
+  <developers>
+    <developer>
+      <id>danieloltmanns</id>
+      <name>Daniel Oltmanns</name>
+      <email>danieloltmanns@knurt.de</email>
+      <url>http://www.knurt.de</url>
+      <organization>KNURT Systeme</organization>
+      <organizationUrl>http://www.knurt.de</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+  </developers>
+  <dependencies>
+    <dependency>
+      <groupId>org.json</groupId>
+      <artifactId>json</artifactId>
+      <version>20090211</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>servlet-api</artifactId>
+      <version>2.5</version>
+    </dependency>
+    <!-- XXX only need org.apache.commons.httpclient.contrib.ssl.EasySSLProtocolSocketFactor - so this is "breaking a butterfly on a wheel" -->
+    <dependency>
+      <groupId>com.itextpdf</groupId>
+      <artifactId>itextpdf</artifactId>
+      <version>5.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.codehaus.cjcook</groupId>
+      <artifactId>cjcook-examples</artifactId>
+      <version>0.17</version>
+    </dependency>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
 </project>
 
