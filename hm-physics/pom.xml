@@ -9,10 +9,10 @@
 	<artifactId>hm-physics</artifactId>
 	<packaging>jar</packaging>
 	<name>hm-physics</name>
-	<url>http://maven.apache.org</url>
-	<!-- 
-		this must be the worst i have ever programmed!!!
-	 -->
+	<url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    Yeah - implement the world!!!
+   </description>
 
 	<licenses>
 		<license>

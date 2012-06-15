@@ -1,5 +1,5 @@
 /*
- * Copyright 2005 - 2009 by KNURT Systeme (http://www.knurt.de)
+ * Copyright 2005 - 2012 by KNURT Systeme (http://www.knurt.de)
  *
  * Licensed under the Creative Commons License Attribution-NonCommercial 3.0 Unported;
  * you may not use this file except in compliance with the License.

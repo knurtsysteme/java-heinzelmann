@@ -9,7 +9,10 @@
 	<artifactId>hm-2d</artifactId>
 	<packaging>jar</packaging>
 	<name>javaheinzelmann</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    Some 2D transformations from school     
+   </description>
 
 	<licenses>
 		<license>

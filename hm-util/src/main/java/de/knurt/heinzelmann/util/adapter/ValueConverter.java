@@ -1,5 +1,5 @@
 /*
- * Copyright 2005 - 2009 by KNURT Systeme (http://www.knurt.de)
+ * Copyright 2005 - 2012 by KNURT Systeme (http://www.knurt.de)
  *
  * Licensed under the Creative Commons License Attribution-NonCommercial 3.0 Unported;
  * you may not use this file except in compliance with the License.
@@ -33,6 +33,11 @@ public abstract class ValueConverter<E> {
 		}
 	}
 
+	/**
+	 * convert the given source value to a target value and return
+	 * @param value source
+	 * @return target value
+	 */
 	protected abstract E convert(E value);
 
 	public E[] original() {

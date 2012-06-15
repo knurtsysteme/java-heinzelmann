@@ -8,6 +8,10 @@
   <groupId>de.knurt.heinzelmann</groupId>
   <artifactId>hm-testutils</artifactId>
 	<name>hm-testutils</name>
+  <url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    own solution for a dirty context
+   </description>
   <version>1.00-SNAPSHOT</version>
   	<licenses>
 		<license>

@@ -6,7 +6,10 @@
 	<packaging>pom</packaging>
 	<version>1.00-SNAPSHOT</version>
 	<name>javaheinzelmann</name>
-	<url>http://maven.apache.org</url>
+  <url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    Some useful and some useless stuff     
+   </description>
 	<modules>
 		<module>hm-3d</module>
 		<module>hm-persist</module>
@@ -62,54 +65,5 @@
 			</plugin>
 		</plugins>
 	</build>
-	<dependencies>
-	<!-- 
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>4.7</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.openejb</groupId>
-			<artifactId>commons-dbcp-all</artifactId>
-			<version>1.3</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
-		</dependency>
-		<dependency>
-			<groupId>org.json</groupId>
-			<artifactId>json</artifactId>
-			<version>20090211</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.commons</groupId>
-			<artifactId>commons-email</artifactId>
-			<version>1.1</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-validator</groupId>
-			<artifactId>commons-validator</artifactId>
-			<version>1.3.1</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework</groupId>
-			<artifactId>spring-ibatis</artifactId>
-			<version>2.0.8</version>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>2.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>com.db4o</groupId>
-			<artifactId>db4o-full-java5</artifactId>
-			<version>7.13-SNAPSHOT</version>
-		</dependency>
-		-->
-	</dependencies>
 </project>
 

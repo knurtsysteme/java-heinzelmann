@@ -9,7 +9,10 @@
 	<artifactId>hm-persist</artifactId>
 	<packaging>jar</packaging>
 	<name>hm-persist</name>
-	<url>http://maven.apache.org</url>
+	<url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    Utilities for persistence dealing with jcouchdb, ibatis and general purposes.
+   </description>
 
 	<licenses>
 		<license>

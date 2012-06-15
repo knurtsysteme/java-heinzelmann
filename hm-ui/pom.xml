@@ -9,7 +9,10 @@
 	<artifactId>hm-ui</artifactId>
 	<packaging>jar</packaging>
 	<name>hm-ui</name>
-	<url>http://maven.apache.org</url>
+  <url>https://github.com/knurtsysteme/java-heinzelmann</url>
+  <description>
+    show something somewhere with generating it with this module dealing with html and swing. 
+   </description>
 
 	<licenses>
 		<license>
