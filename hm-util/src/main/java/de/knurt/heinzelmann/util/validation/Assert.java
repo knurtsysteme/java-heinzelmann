@@ -1,5 +1,5 @@
 /*
- * Copyright 2005 - 2012 by KNURT Systeme (http://www.knurt.de)
+ * Copyright 2005 - 2009 by KNURT Systeme (http://www.knurt.de)
  *
  * Licensed under the Creative Commons License Attribution-NonCommercial 3.0 Unported;
  * you may not use this file except in compliance with the License.
@@ -17,10 +17,10 @@ package de.knurt.heinzelmann.util.validation;
 
 /**
  * helper to throw exceptions on assert not true.
+ * senseless? does make sense in velocity templates!
  * 
  * @author Daniel Oltmanns
- * @since 1.00 SNAPSHOT (08/20/2010)
- * @version 1.00 SNAPSHOT (08/20/2010)
+ * @since 08/20/2010
  */
 public class Assert {
 	public static final boolean notNull(Object object) {

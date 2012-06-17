@@ -34,7 +34,7 @@ public class AssertOrException {
 	public static final void notNull(Object object) {
 		notNull(object, "assert object is not null");
 	}
-
+	
 	public static final void notNull(Object object, String message) {
 		if (ACTIVE && !Assert.notNull(object)) {
 			throw new NullPointerException(message);
