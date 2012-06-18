@@ -26,13 +26,20 @@ public abstract class ValueConverter<E> {
 	private E[] original;
 
 	public ValueConverter(E[] values) {
+		this.setOriginals(values);
+	}
+
+	/**
+	 * set original values
+	 * @param originals
+	 */
+	public void setOriginals(E[] values) {
 		this.original = values;
 		this.converted = values.clone();
 		for (int i = 0; i < values.length; i++) {
 			this.converted[i] = this.convertIntern(values[i]);
 		}
 	}
-
 	/**
 	 * convert the given source value to a target value and return
 	 * @param value source
