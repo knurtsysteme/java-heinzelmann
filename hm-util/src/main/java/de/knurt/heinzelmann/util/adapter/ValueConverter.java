@@ -29,7 +29,7 @@ public abstract class ValueConverter<E> {
 		this.original = values;
 		this.converted = values.clone();
 		for (int i = 0; i < values.length; i++) {
-			this.converted[i] = this.convert(values[i]);
+			this.converted[i] = this.convertIntern(values[i]);
 		}
 	}
 
@@ -38,7 +38,7 @@ public abstract class ValueConverter<E> {
 	 * @param value source
 	 * @return target value
 	 */
-	protected abstract E convert(E value);
+	protected abstract E convertIntern(E value);
 
 	public E[] original() {
 		return original;
