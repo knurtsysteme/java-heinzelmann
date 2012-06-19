@@ -105,4 +105,84 @@ public class JSONValidation {
 		}
 		return result;
 	}
+
+	/**
+	 * return true, if the given key in the given json is set
+	 * 
+	 * @param json
+	 *            object to test
+	 * @param key
+	 *            to check
+	 * @return true, if the given key in the given json is set
+	 */
+	public static boolean isValue(JSONObject json, String key) {
+		// try and error ...
+		boolean result = true;
+		try {
+			json.get(key);
+		} catch (JSONException e) {
+			result = false;
+		}
+		return result;
+	}
+
+	/**
+	 * return true, if the given position in the given json is set
+	 * 
+	 * @param json
+	 *            array to test
+	 * @param pos
+	 *            position to check
+	 * @return true, if the given position in the given json is set
+	 */
+	public static boolean isValue(JSONArray json, int pos) {
+		// try and error ...
+		boolean result = true;
+		try {
+			json.get(pos);
+		} catch (JSONException e) {
+			result = false;
+		}
+		return result;
+	}
+
+	/**
+	 * return true, if the given key in the given json is a {@link String}
+	 * 
+	 * @param json
+	 *            object to test
+	 * @param key
+	 *            to check
+	 * @return true, if the given key in the given json is a {@link String}
+	 */
+	public static boolean isString(JSONObject json, String key) {
+		// try and error ...
+		boolean result = true;
+		try {
+			json.getString(key);
+		} catch (JSONException e) {
+			result = false;
+		}
+		return result;
+	}
+
+	/**
+	 * return true, if the given position in the given json is a {@link String}
+	 * 
+	 * @param json
+	 *            object to test
+	 * @param pos
+	 *            position to check
+	 * @return true, if the given position in the given json is a {@link String}
+	 */
+	public static boolean isString(JSONArray json, int pos) {
+		// try and error ...
+		boolean result = true;
+		try {
+			json.getString(pos);
+		} catch (JSONException e) {
+			result = false;
+		}
+		return result;
+	}
 }
