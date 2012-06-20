@@ -27,12 +27,30 @@ import de.knurt.heinzelmann.util.nebc.BoardUnit;
  */
 
 public class StringFromReader implements BoardUnit<BufferedReader, String> {
+	private int readAheadLimit = 10000;
+
+	/**
+	 * construct it with a default readAheadLimit of 10000 characters
+	 */
+	public StringFromReader() {
+		this(10000);
+	}
+
+	/**
+	 * construct it with a readAheadLimit
+	 * 
+	 * @param readAheadLimit
+	 *            {@link BufferedReader#mark(int)}
+	 */
+	public StringFromReader(int readAheadLimit) {
+		this.readAheadLimit = readAheadLimit;
+	}
 
 	@Override
 	public String process(BufferedReader reader) {
 		StringBuilder result = new StringBuilder();
 		try {
-			reader.mark(10000);
+			reader.mark(this.readAheadLimit);
 			String line;
 			do {
 				line = reader.readLine();
