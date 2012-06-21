@@ -19,7 +19,7 @@
  * TODO To change the template for this generated file go to
  * Window - Preferences - Java - Code Style - Code Templates
  */
-package de.knurt.heinzelmann.j3d;
+package de.knurt.heinzelmann.ui.j3d;
 
 import java.awt.GraphicsConfiguration;
 import java.awt.GridLayout;
