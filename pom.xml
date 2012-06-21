@@ -1,69 +1,78 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.knurt.heinzelmann</groupId>
-	<artifactId>heinzelmann</artifactId>
-	<packaging>pom</packaging>
-	<version>1.00-SNAPSHOT</version>
-	<name>javaheinzelmann</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>de.knurt.heinzelmann</groupId>
+  <artifactId>heinzelmann</artifactId>
+  <packaging>pom</packaging>
+  <version>0.90.0</version>
+  <name>javaheinzelmann</name>
   <url>https://github.com/knurtsysteme/java-heinzelmann</url>
   <description>
     Some useful and some useless stuff     
    </description>
-	<modules>
-		<module>hm-3d</module>
-		<module>hm-persist</module>
-		<module>hm-physics</module>
-		<module>hm-spring</module>
-		<module>hm-ui</module>
-		<module>hm-util</module>
-		<module>hm-testutils</module>
-	</modules>
+  <modules>
+    <module>hm-ui</module>
+    <module>hm-util</module>
+  </modules>
 
-	<licenses>
-		<license>
-			<name>creativ commons</name>
-			<url>http://creativecommons.org/licenses/by-nc/3.0</url>
-			<distribution>Attribution-Noncommercial 3.0 Unported</distribution>
-			<comments>Attribution-Noncommercial 3.0 Unported</comments>
-		</license>
-	</licenses>
-	<organization>
-		<name>KNURT Systeme</name>
-		<url>http://www.knurt.de</url>
-	</organization>
-	<developers>
-		<developer>
-			<id>danieloltmanns</id>
-			<name>Daniel Oltmanns</name>
-			<email>danieloltmanns@knurt.de</email>
-			<url>http://www.knurt.de</url>
-			<organization>KNURT Systeme</organization>
-			<organizationUrl>http://www.knurt.de</organizationUrl>
-			<roles>
-				<role>developer</role>
-			</roles>
-			<timezone>1</timezone>
-		</developer>
-	</developers>
-	<repositories>
-		<repository>
-			<id>maven-restlet</id>
-			<name>Public online Restlet repository</name>
-			<url>http://maven.restlet.org/</url>
-		</repository>
-	</repositories>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
-				</configuration>
-			</plugin>
-		</plugins>
-	</build>
+  <licenses>
+    <license>
+      <name>creativ commons</name>
+      <url>http://creativecommons.org/licenses/by-nc/3.0</url>
+      <distribution>Attribution-Noncommercial 3.0 Unported</distribution>
+      <comments>Attribution-Noncommercial 3.0 Unported</comments>
+    </license>
+  </licenses>
+  <organization>
+    <name>KNURT Systeme</name>
+    <url>http://www.knurt.de</url>
+  </organization>
+  <developers>
+    <developer>
+      <id>danieloltmanns</id>
+      <name>Daniel Oltmanns</name>
+      <email>danieloltmanns@knurt.de</email>
+      <url>http://www.knurt.de</url>
+      <organization>KNURT Systeme</organization>
+      <organizationUrl>http://www.knurt.de</organizationUrl>
+      <roles>
+        <role>developer</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+  </developers>
+  <repositories>
+    <repository>
+      <id>maven-restlet</id>
+      <name>Public online Restlet repository</name>
+      <url>http://maven.restlet.org/</url>
+    </repository>
+  </repositories>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.8.1</version>
+        <configuration>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
 </project>
 
