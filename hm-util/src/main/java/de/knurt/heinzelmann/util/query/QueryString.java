@@ -32,8 +32,7 @@ import javax.servlet.http.HttpServletRequest;
  * This is the part of the URL that is a query string.
  * 
  * @author Daniel Oltmanns
- * @since 0.1 12.04.2009
- * @version 0.20091104
+ * @since 04/12/2009
  */
 public class QueryString implements Map<String, String> {
 
@@ -69,8 +68,9 @@ public class QueryString implements Map<String, String> {
 		return result;
 	}
 
-	public void put(String key, int value) {
+	public QueryString put(String key, int value) {
 		this.put(key, value + "");
+		return this;
 	}
 
 	@Override

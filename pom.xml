@@ -3,7 +3,7 @@
   <groupId>de.knurt.heinzelmann</groupId>
   <artifactId>heinzelmann</artifactId>
   <packaging>pom</packaging>
-  <version>0.90.0</version>
+  <version>0.90.1</version>
   <name>javaheinzelmann</name>
   <url>https://github.com/knurtsysteme/java-heinzelmann</url>
   <description>
